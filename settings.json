@@ -1,0 +1,309 @@
+{
+    "workbench.colorTheme": "Adapta Nokto",
+    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+    // "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+    // "editor.fontFamily": "'Jetbrains Mono', 'Courier New', monospace",
+    // "editor.fontFamily": "'Fira Code iScript', 'monospace', monospace",
+    // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": 600,
+    "editor.fontSize": 16,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#2be09e",
+        "terminalCursor.foreground": "#2be09e"
+    },
+    "terminal.integrated.fontSize": 16,
+    // "[javscript]":{
+    // },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "storage.modifier", //static keyword
+                    // "storage.type", //class keyword
+                    "storage.type.class",
+                    "support.class.builtin",
+                    "keyword.control",
+                    "constant.language",
+                    "entity.other.attribute-name",
+                    "string.quoted.single",
+                    "entity.name.method",
+                    "entity.name.tag",
+                    "variable.language.this.php",
+                    "support.type.primitive.ts",
+                    "variable.language.this.ts",
+                    "variable.language.super.ts",
+                    "keyword.operator.comparison",
+                    "keyword.operator.class.php",
+                    "keyword.operator.comparison.php"
+                ],
+                "settings": {
+                    "fontStyle": "italic bold"
+                }
+            },
+            {
+                "scope": ["constant"],
+                "settings": {
+                    "foreground": "#2be09e"
+                }
+            },
+            {
+                "scope": ["variable.parameter"],
+                "settings": {
+                    "foreground": "#dd6986"
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.constant",
+                    "variable.other.readwrite",
+                    "variable.other.property",
+                    "variable.other.object.property.ts"
+                ],
+                "settings": {
+                    "foreground": "#e96daf"
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.object.property.ts",
+                    "variable.other.object.property.js"
+                ],
+                "settings": {
+                    "foreground": "#55c9d8"
+                }
+            },
+            {
+                "scope": ["variable.other.object.ts"],
+                "settings": {
+                    "foreground": "#80dfa8"
+                }
+            },
+            {
+                "scope": [
+                    "punctuation.definition.variable.php",
+                    "variable.other.object.js"
+                ],
+                "settings": {
+                    "foreground": "#41e59b"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.other.DDL.create.II.sql"
+                ],
+                "settings": {
+                    "foreground": "#41e2e5"
+                }
+            },
+            {
+                "scope": ["keyword.other.phpdoc.php"],
+                "settings": {
+                    "foreground": "#e776b6"
+                }
+            },
+            {
+                "scope": ["keyword.other.sql"],
+                "settings": {
+                    "foreground": "#e776b6"
+                }
+            },
+            {
+                "scope": ["support.attribute.php"],
+                "settings": {
+                    "foreground": "#41e59b"
+                }
+            },
+            {
+                "scope": ["meta.attribute.php"],
+                "settings": {
+                    "foreground": "#e776b6"
+                }
+            },
+            {
+                "scope": ["keyword.other.data-integrity.sql"],
+                "settings": {
+                    "foreground": "#bc92df"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.other.type.php",
+                    "variable.other.global.php"
+                ],
+                "settings": {
+                    "foreground": "#8d6fd3"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.other.DML.sql"
+                ],
+                "settings": {
+                    "foreground": "#8d6fd3"
+                }
+            },
+            {
+                "scope": ["constant.language.php"],
+                "settings": {
+                    "foreground": "#68f073"
+                }
+            },
+            {
+                "scope": ["variable.language.this.php"],
+                "settings": {
+                    "foreground": "#e2407b"
+                }
+            },
+            {
+                "scope": ["constant.numeric.sql"],
+                "settings": {
+                    "foreground": "#e1608b"
+                }
+            },
+            {
+                "scope": ["variable.other.php"],
+                "settings": {
+                    "foreground": "#f2edef"
+                }
+            }
+        ],
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // "editor.formatOnSave": true
+    },
+    // // "prettier.jsxSingleQuote": true,
+    // // "prettier.singleQuote": true,
+    // // "prettier.arrowParens": "avoid",
+    // "[typescriptreact]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    //     // "editor.formatOnSave": false,
+    // },
+    // "[typescript]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    //     // "editor.formatOnSave": false,
+    // },
+    // "[json]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    // "[scss]": {
+    //     "editor.defaultFormatter": "vscode.css-language-features"
+    // },
+    // "prettier.tabWidth": 4,
+    // "eslint.validate": [
+    //     "javascript",
+    //     "javascriptreact",
+    //     "typescript",
+    //     "typescriptreact"
+    //     // { "language": "typescript", "autofix": true },
+    //     // { "language": "typescriptreact", "autofix": true }
+    // ],
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // },
+    // "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.matchBrackets": false,
+    "material-icon-theme.folders.color": "#7cb342",
+    "explorer.confirmDelete": false,
+    "php.validate.executablePath": "/usr/bin/php",
+    "totalTypeScript.hideAllTips": false,
+    "totalTypeScript.hideBasicTips": false,
+    "intelephense.stubs": [
+        "apache",
+        "bcmath",
+        "bz2",
+        "calendar",
+        "com_dotnet",
+        "Core",
+        "ctype",
+        "curl",
+        "date",
+        "dba",
+        "dom",
+        "enchant",
+        "exif",
+        "FFI",
+        "fileinfo",
+        "filter",
+        "fpm",
+        "ftp",
+        "gd",
+        "gettext",
+        "gmp",
+        "hash",
+        "iconv",
+        "imap",
+        "intl",
+        "json",
+        "ldap",
+        "libxml",
+        "mbstring",
+        "meta",
+        "mysqli",
+        "oci8",
+        "odbc",
+        "openssl",
+        "pcntl",
+        "pcre",
+        "PDO",
+        "pdo_ibm",
+        "pdo_mysql",
+        "pdo_pgsql",
+        "pdo_sqlite",
+        "pgsql",
+        "Phar",
+        "posix",
+        "pspell",
+        "random",
+        "readline",
+        "Reflection",
+        "session",
+        "shmop",
+        "SimpleXML",
+        "snmp",
+        "soap",
+        "sockets",
+        "sodium",
+        "SPL",
+        "sqlite3",
+        "standard",
+        "superglobals",
+        "sysvmsg",
+        "sysvsem",
+        "sysvshm",
+        "tidy",
+        "tokenizer",
+        "xml",
+        "xmlreader",
+        "xmlrpc",
+        "xmlwriter",
+        "xsl",
+        "Zend OPcache",
+        "zip",
+        "zlib",
+        "memcached",
+        "ds",
+        "xdebug"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "codesnap.transparentBackground": true,
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0) 0px 20px 68px",
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.iconTheme": "material-icon-theme",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "glassit.step": 8,
+    "glassit.alpha": 220,
+    "intelephense.environment.phpVersion": "8.2.10"
+}
