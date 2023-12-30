@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+SCREEN_INPUT=$1
+TABLET_PEN_NAME='TABLET 1060 Pen Pen (0)'
+TABLET_PEN_OUTPUT=$(xinput | grep "$TABLET_PEN_NAME")
+if [ -z "$TABLET_PEN_OUTPUT" ]
+then
+    echo "$TABLET_PEN_NAME was not found. Check if it is connected"
+    exit 1
+fi
+
+TABLET_PEN_ID_OUTPUT=$(echo $TABLET_PEN_OUTPUT | grep -o 'id=[0-9]*')
+TABLET_PEN_ID=$(echo $TABLET_PEN_ID_OUTPUT | grep -o '[0-9]*')
+echo "Setting $TABLET_PEN_NAME id ($TABLET_PEN_ID)"
+
+if [ -z "$SCREEN_INPUT" ]
+then
+    PRIMARY_DISPLAY=$(xrandr -q | grep "primary" | awk '{print $1}')
+    xinput map-to-output $TABLET_PEN_ID $PRIMARY_DISPLAY
+    exit 0
+fi
+
+xinput map-to-output $TABLET_PEN_ID $SCREEN_INPUT
