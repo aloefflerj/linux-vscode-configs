@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+sudo xrandr --output HDMI-1 --mode 1920x1080 --scale 1.333333x1 --primary --pos 760x0 --output LVDS-1 --scale 1x1 --pos 3440x0
